@@ -18,6 +18,10 @@
 
 <h3> Reviews </h3>
 
+<h1> Add a review </h1>
+
+<%= render 'reviews/form', review: @review %>
+
 <% @restaurant.reviews.each do |review| %>
 <p> <%= review.content %> </p>
 <p> <strong> Rating: </strong> <%= review.rating %> </p>
